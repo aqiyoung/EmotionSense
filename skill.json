@@ -1,0 +1,7 @@
+{
+  "name": "EmotionSense",
+  "description": "Real-time emotion detection and resonance system for AI agents. Detects user mood patterns and adjusts response style dynamically.",
+  "version": "1.0.0",
+  "author": "Jarvis & Young",
+  "license": "MIT"
+}
