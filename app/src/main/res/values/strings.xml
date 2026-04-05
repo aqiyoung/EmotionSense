@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">情绪感知</string>
+    <string name="accessibility_description">情绪感知服务：分析输入行为，判断情绪状态</string>
+</resources>
