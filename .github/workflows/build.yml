@@ -27,16 +27,11 @@ jobs:
         with:
           name: EmotionSense-debug
           path: app/build/outputs/apk/debug/*.apk
-      - name: Create Release
-        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
-        uses: softprops/action-gh-release@v1
-        with:
-          files: app/build/outputs/apk/debug/*.apk
-          tag_name: v${{ github.run_number }}
-          name: EmotionSense v${{ github.run_number }}
-          body: |
-            自动构建的情绪感知应用
-            - 支持输入法行为分析
-            - 支持应用使用监控
-            - 支持情绪状态判断
-            - 小米澎湃OS 3 优化
+      # 暂时跳过自动 Release，优先确保 APK 生成可下载
+      # - name: Create Release
+      #   if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+      #   uses: softprops/action-gh-release@v1
+      #   with:
+      #     files: app/build/outputs/apk/debug/*.apk
+      #     tag_name: v${{ github.run_number }}
+      #     name: EmotionSense v${{ github.run_number }}
